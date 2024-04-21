@@ -18,7 +18,7 @@ contract Wallet {
 
     modifier onlyOwner() {
         require(msg.sender == owner, "Only the owner can call this function");
-        _;
+        
     }
 
     function deposit(uint256 amount) external {
